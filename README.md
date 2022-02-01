@@ -48,6 +48,9 @@ $ brew install --cask iterm2
 ```zsh
 $ brew install --cask visual-studio-code
 ```
+1. Install [Setting Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) plugin
+    > 1. **Upload Key:** Shift + Option + U
+    > 2. **Download Key:** Shift + Option + D
 
 ## Setup `Git` SSH
 1. Start the ssh-agent in the background.
