@@ -22,8 +22,13 @@ $ brew install --cask iterm2
     ```zsh
     $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     ```
-    2. Copy `./Scritp` into `~/Script`
-    3. Replace `~/.zshrc` with `./iterm2/zshrc`
+    2. Install zsh-autosuggestions & zsh-syntax-highlighting
+    ```zsh
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+    ```
+    3. Copy `./Scritp` into `~/Script`
+    4. Replace `~/.zshrc` with `./iterm2/zshrc`
 
 2. Import Profile
     1. Go to `Preferences > Profiles`
