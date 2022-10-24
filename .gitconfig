@@ -1,0 +1,43 @@
+# This is Git's per-user configuration file.
+[user]
+	name = sgennrw
+	email = nt.salisa@gmail.com
+	useconfigonly = true
+[alias]
+	l = log --pretty=custom
+	lg = log --graph --pretty=custom
+	sup = log --pretty=custom --author=sgennrw
+	d = diff -- . ':!*package-lock.json' ':!*yarn.lock'
+[color]
+	ui = true
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+[add.interactive]
+	useBuiltin = false # required for git 2.37.0
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+	features = side-by-side line-numbers decorations
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+	file-style = bold yellow ul
+	file-decoration-style = none
+[pretty]
+	custom = "%C(magenta)%h%C(red)%d %C(yellow)%as %C(bold white)%s %C(green)<%an>"
+	#                     │        │            │            │             └─ author name
+	#                     │        │            │            └─ message
+	#                     │        │            └─ date (short)
+	#                     │        └─ decorations (branch, heads or tags)
+	#                     └─ hash (abbreviated)
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+[fetch]
+	prune = true
+[diff]
+	colorMoved = default
