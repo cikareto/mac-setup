@@ -8,6 +8,7 @@
 	lg = log --graph --pretty=custom
 	sup = log --pretty=custom --author=sgennrw
 	d = diff -- . ':!*package-lock.json' ':!*yarn.lock'
+	s = status
 [color]
 	ui = true
 [core]
@@ -35,6 +36,8 @@
 	#                     └─ hash (abbreviated)
 [init]
 	defaultBranch = main
+[status]
+	short = true
 [merge]
 	conflictstyle = diff3
 [fetch]
