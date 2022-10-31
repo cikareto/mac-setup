@@ -6,6 +6,8 @@
 [alias]
 	l = log --pretty=custom
 	lg = log --graph --pretty=custom
+	ln = log --pretty=\"format:%C(magenta)%h %C(yellow)%as %C(white)%s %Cgreen<%an>\" --name-status
+	find = log --pretty=\"format:%C(magenta)%h %C(yellow)%as %C(white)%s %Cgreen<%an>\" --name-status --grep
 	sup = log --pretty=custom --author=sgennrw
 	d = diff -- . ':!*package-lock.json' ':!*yarn.lock'
 	s = status
