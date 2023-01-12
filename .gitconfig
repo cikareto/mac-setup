@@ -12,6 +12,11 @@
 	sup = log --pretty=custom --author=sgennrw
 	d = diff -- . ':!*package-lock.json' ':!*yarn.lock'
 	s = status
+	c = checkout
+	cb = checkout -b
+  	untrack = update-index --assume-unchanged # ignore changes to a file that's already tracked
+  	track = update-index --no-assume-unchanged # start tracking changes again
+  	ignored = !git ls-files -v | grep "^[[:lower:]]" # list which files are currently ignored (--assure-unchanged)
 [color]
 	ui = true
 [core]
@@ -45,5 +50,7 @@
 	conflictstyle = diff3
 [fetch]
 	prune = true
+[push]
+	default = current
 [diff]
 	colorMoved = default
