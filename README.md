@@ -98,10 +98,10 @@ source ~/.vimrc
 ## Install other tools
 
 ```zsh
-brew install --cask rectangle
 brew install --cask docker
 brew install node
 brew install nvm
 brew install bat
 brew install git-delta
+brew install --cask raycast
 ```
