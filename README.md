@@ -104,4 +104,5 @@ brew install nvm
 brew install bat
 brew install git-delta
 brew install --cask raycast
+brew install --cask obsidian
 ```
