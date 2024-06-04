@@ -14,9 +14,9 @@
 	s = status
 	c = checkout
 	cb = checkout -b
-  	untrack = update-index --assume-unchanged # ignore changes to a file that's already tracked
-  	track = update-index --no-assume-unchanged # start tracking changes again
-  	ignored = !git ls-files -v | grep "^[[:lower:]]" # list which files are currently ignored (--assure-unchanged)
+  	untrack = update-index --skip-worktree # ignore changes to a file that's already tracked
+  	track = update-index --no-skip-worktree # start tracking changes again
+  	ignored = !git ls-files -v | grep ^S  # list which files are currently ignored (--skip-worktree)
 [color]
 	ui = true
 [core]
