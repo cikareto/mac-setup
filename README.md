@@ -95,10 +95,18 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ```
 
+## Install docker [colima](https://github.com/abiosoft/colima)
+```zsh
+brew install docker colima
+```
+Then will be able to start docker daemon by
+```zsh
+colima start
+```
+
 ## Install other tools
 
 ```zsh
-brew install --cask docker
 brew install node
 brew install nvm
 brew install bat
