@@ -97,7 +97,14 @@ source ~/.vimrc
 
 ## Install docker [colima](https://github.com/abiosoft/colima)
 ```zsh
-brew install docker colima
+brew install docker docker-compose colima
+```
+Note that
+```
+Compose is a Docker plugin. For Docker to find the plugin, add "cliPluginsExtraDirs" to ~/.docker/config.json:
+  "cliPluginsExtraDirs": [
+      "/opt/homebrew/lib/docker/cli-plugins"
+  ]
 ```
 Then will be able to start docker daemon by
 ```zsh
